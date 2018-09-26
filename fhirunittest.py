@@ -210,7 +210,7 @@ class FHIRResourceFile(object):
         """
         assert os.path.isdir(directory)
         all_tests = []
-        for utest in glob.glob(os.path.join(directory, '*-example*.json')):
+        for utest in glob.glob(os.path.join(directory, '*example*.json')):
             if 'canonical.json' not in utest:
                 all_tests.append(cls(filepath=utest))
         
