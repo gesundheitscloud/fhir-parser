@@ -113,6 +113,13 @@ class FHIRClass(object):
             if prop.nonoptional:
                 return True
         return False
+
+    @property
+    def has_nonoptional_one_of_many(self):
+        for prop in self.properties:
+            if prop.one_of_many and prop.nonoptional:
+                return True
+        return False
     
     @property
     def sorted_nonoptionals(self):
