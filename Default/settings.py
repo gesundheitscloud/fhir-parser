@@ -22,6 +22,7 @@ tpl_resource_source = 'template-resource.py'          # the template to use as s
 tpl_resource_target = '../models'                     # target directory to write the generated class files to
 tpl_resource_target_ptrn = '{}.py'                    # target class file name pattern, with one placeholder (`{}`) for the class name
 tpl_codesystems_source = 'template-codesystems.py'    # the template to use as source when writing enums for CodeSystems; can be `None`
+tpl_codesystems_target = '../codesystems'             # target directory to write the generated code system files to
 tpl_codesystems_target_ptrn = 'codesystem_{}.py'      # the filename pattern to use for generated code systems and value sets, with one placeholder (`{}`) for the class name
 
 # Whether and where to put the factory methods and the dependency graph

@@ -158,7 +158,7 @@ class FHIRValueSetRenderer(FHIRRenderer):
                 'system': system,
             }
             target_name = self.settings.tpl_codesystems_target_ptrn.format(system.name)
-            target_path = os.path.join(self.settings.tpl_resource_target, target_name)
+            target_path = os.path.join(self.settings.tpl_codesystems_target, target_name)
             self.do_render(data, self.settings.tpl_codesystems_source, target_path)
 
 
